@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+.main_header {
+    font-size: 14px;
+    height: 100px;
+}
+.header_container {
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.subheader{
+    font-size: 15px;
+    background-color: #F4F4F4;
+}
+.main_header-position {
+    justify-content: space-between;
+}
+.main_header-item{
+    height: 40px;
+}
+.serch_form {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    margin-right: 110px;
+}
+input{
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding-left: 16px;
+    border-radius: 3px;
+}
+input[name="search"]{
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.serch_form button{
+    height: 40px;
+    width: 75px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+}
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+}
+.login_btn{
+    height: 100%;
+    width: 100px;
+    border: 1px solid  #757575;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.0001);;
+}
+.subheader{
+    height: 45px;
+    background-color:  #F4F4F4;
+}
+.nav_item {
+    margin-right: 40px;
+}
+.nav_item a{
+    text-decoration: none;
+    color: #737270;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+.title{
+    margin: 40px auto 35px auto;
+    font-size: 26px;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.menu_item{
+    font-size: 14px;
+    color: #878786;
+}
+.iput_form {
+    box-sizing: border-box;
+    border: 1px solid #C6C6C5;
+    border-radius: 3px;
+    padding: 40px 20px;
+}
+.input_title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.name_inpust {
+    display: flex;
+    justify-content: space-between;
+}
+.input_form-name{
+    margin-bottom: 40px;
+}
+.name_inpust_name {
+    width: 236px;
+}
+[name="sex"]{
+    width: 150px;
+    margin-right: 20px;
+}
+[name="title"]{
+    width: 100%;
+}
+.input_form-title{
+    margin-bottom: 48px;
+}
+.input_title-blue{
+    font-weight: 500px;
+    color: #007AFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.horline {
+    height: 1px;
+    background-color: #C6C6C5;
+    opacity: 0.5;
+    margin-bottom: 17px;
+}
+.input_form_addres_items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.addres_item {
+    width: 298px;
+}
+.addres_inpust input{
+    width: 100%;
+}
+.addres_item p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #878786;
+}
