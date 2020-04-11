@@ -3,14 +3,18 @@ body {
     padding: 0;
     font-family: Roboto;
 }
+button{
+    cursor: pointer;
+}
 .main_header {
     font-size: 14px;
     height: 100px;
 }
 .header_container {
     height: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
 }
@@ -45,6 +49,8 @@ input[name="search"]{
     border-bottom-right-radius: 0;
 }
 .serch_form button{
+    font-weight: 500;
+    font-size: 14px;
     height: 40px;
     width: 75px;
     background-color: #007AFF;
@@ -60,11 +66,18 @@ input[name="search"]{
     width: 340px;
 }
 .login_btn{
-    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
     width: 100px;
     border: 1px solid  #757575;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.0001);;
+    background-color: rgba(0, 0, 0, 0.0001);
+    color: #757575;
+}
+.login_btn:hover{
+    color: white;
+    background-color: #007AFF;
 }
 .subheader{
     height: 45px;
@@ -77,9 +90,15 @@ input[name="search"]{
     text-decoration: none;
     color: #737270;
 }
+.nav_item a:hover{
+    color: black;
+}
 .container {
     max-width: 970px;
     margin: 0 auto;
+}
+.applicaiton{
+    margin-bottom: 50px;
 }
 .title{
     margin: 40px auto 35px auto;
@@ -90,10 +109,19 @@ input[name="search"]{
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
+    padding: 0 20px;
 }
 .menu_item{
+    font-weight: 500;
     font-size: 14px;
     color: #878786;
+    cursor: pointer;
+}
+.menu_item:hover {
+    color: #007AFF;
+}
+.menu_item_active {
+    color: #007AFF;
 }
 .iput_form {
     box-sizing: border-box;
@@ -137,6 +165,7 @@ input[name="search"]{
     background-color: #C6C6C5;
     opacity: 0.5;
     margin-bottom: 17px;
+    width: 100%;
 }
 .input_form_addres_items {
     display: flex;
@@ -152,5 +181,63 @@ input[name="search"]{
 .addres_item p{
     font-size: 14px;
     line-height: 17px;
+    color: #878786;
+}
+.input_form-footer {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_form-footer-txt{
+    font-size: 14px;
+    line-height: 16px;
+    color: #878786;
+}
+.blue{
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    width: 150px;
+    background-color: #007AFF;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+}
+.footer_menu_item_title{
+    font-size: 24px;
+    line-height: 29px;
+    color: #1C1C1B;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.footer_menu_item_link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px 0;
+    color: #1C1C1B;
+}
+.footer_menu_item_link:hover{
+    color: #007AFF;
+}
+.footer_menu_item_link img{
+    margin-right: 10px;
+}
+.header_container .horline{
+    opacity: 1;
+}
+.footer_txt {
+    margin: 2px 0 20px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
     color: #878786;
 }
