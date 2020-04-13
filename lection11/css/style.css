@@ -28,11 +28,13 @@ button{
 .main_header-item{
     height: 40px;
 }
+.main_header-item img{
+    height: 28px;
+}
 .serch_form {
     display: flex;
     align-items: center;
     width: 400px;
-    justify-content: space-between;
     margin-right: 110px;
 }
 input{
@@ -51,11 +53,12 @@ input[name="search"]{
 .serch_form button{
     font-weight: 500;
     font-size: 14px;
-    height: 40px;
-    width: 75px;
+    height: 100%;
+    padding: 0 15px;
     background-color: #007AFF;
     color: white;
     border: none;
+    outline: none;
     border-top-right-radius:3px ;
     border-bottom-right-radius: 3px;
 }
@@ -66,18 +69,20 @@ input[name="search"]{
     width: 340px;
 }
 .login_btn{
+    outline: none;
     font-weight: 500;
     font-size: 14px;
-    height: 40px;
-    width: 100px;
+    height: 100%;
+    background-color: white;
+    padding: 0 25px;
     border: 1px solid  #757575;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.0001);
     color: #757575;
 }
 .login_btn:hover{
     color: white;
     background-color: #007AFF;
+    border:  1px solid  #007AFF;
 }
 .subheader{
     height: 45px;
@@ -85,6 +90,7 @@ input[name="search"]{
 }
 .nav_item {
     margin-right: 40px;
+    list-style-type: none;
 }
 .nav_item a{
     text-decoration: none;
@@ -101,7 +107,7 @@ input[name="search"]{
     margin-bottom: 50px;
 }
 .title{
-    margin: 40px auto 35px auto;
+    margin: 40px 0 35px;
     font-size: 26px;
     text-align: center;
 }
@@ -123,7 +129,7 @@ input[name="search"]{
 .menu_item_active {
     color: #007AFF;
 }
-.iput_form {
+.input_form {
     box-sizing: border-box;
     border: 1px solid #C6C6C5;
     border-radius: 3px;
@@ -134,14 +140,14 @@ input[name="search"]{
     font-weight: 500;
     margin-bottom: 10px;
 }
-.name_inpust {
+.name_inputs {
     display: flex;
     justify-content: space-between;
 }
 .input_form-name{
     margin-bottom: 40px;
 }
-.name_inpust_name {
+.name_inputs_name {
     width: 236px;
 }
 [name="sex"]{
@@ -158,14 +164,18 @@ input[name="search"]{
     font-weight: 500px;
     color: #007AFF;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom:1px solid #C6C6C5;
+    margin-bottom: 17px;
 }
 .horline {
-    height: 1px;
+    /*height: 1px;
     background-color: #C6C6C5;
     opacity: 0.5;
     margin-bottom: 17px;
-    width: 100%;
+    width: 100%;*/
+    
 }
 .input_form_addres_items {
     display: flex;
@@ -175,7 +185,7 @@ input[name="search"]{
 .addres_item {
     width: 298px;
 }
-.addres_inpust input{
+.addres_inputs input{
     width: 100%;
 }
 .addres_item p{
@@ -184,6 +194,7 @@ input[name="search"]{
     color: #878786;
 }
 .input_form-footer {
+    height: 40px;
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -197,8 +208,8 @@ input[name="search"]{
 .blue{
     font-size: 14px;
     font-weight: 500;
-    height: 40px;
-    width: 150px;
+    height: 100%;
+    padding: 0 15px;
     background-color: #007AFF;
     border-radius: 3px;
     border: none;
@@ -235,7 +246,9 @@ input[name="search"]{
     opacity: 1;
 }
 .footer_txt {
-    margin: 2px 0 20px 0;
+    border-top: 1px solid  #C6C6C5;
+    padding: 20px 0 20px 0;
+    margin: 0 80px;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
