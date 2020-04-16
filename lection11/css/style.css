@@ -33,9 +33,9 @@ button{
 }
 .serch_form {
     display: flex;
+    align-items: center;
     width: 400px;
     margin-right: 110px;
-    height: 40px;
 }
 input{
     height: 40px;
@@ -53,8 +53,8 @@ input[name="search"]{
 .serch_form button{
     font-weight: 500;
     font-size: 14px;
-    padding-right:15px;
-    padding-left: 15px;
+    height: 100%;
+    padding: 0 15px;
     background-color: #007AFF;
     color: white;
     border: none;
@@ -72,8 +72,9 @@ input[name="search"]{
     outline: none;
     font-weight: 500;
     font-size: 14px;
+    height: 100%;
     background-color: white;
-    padding: 11px 25px;
+    padding: 0 25px;
     border: 1px solid  #757575;
     border-radius: 3px;
     color: #757575;
