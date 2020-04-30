@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+header{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid #A3A3A3;;
+}
+.flex{
+    display: flex;
+}
+.burger{
+    display: flex;
+    flex-wrap: wrap;
+    width: 24px ;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.burger img{
+    display: none;
+}
+.burger span{
+    height: 5px;
+    width: 5px;
+    margin: 1.5px;
+    background-color: white;
+
+}
+.nav{
+    display: flex;
+    margin-left: 20 px;
+    height: 60px;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 20px;
+    border-right: 1px solid #A3A3A3;;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.nav_item{
+    display: none;
+    align-items: center;
+    padding: 0 2px;
+    height: 100%;
+    box-sizing: border-box;
+    color: #9F9F9F;
+    cursor: pointer;
+}
+.nav_item.active{
+    display: flex;
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 0 25px;
+}
+.search_form{
+    display: flex;
+    align-items: center;
+}
+.search_button{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+input[type="search"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+}
+input[type="search"]::placeholder{
+    color: white;
+    font-size: 13px;
+}
+.main_content {
+    background-image: url(../img/bike.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.main_content h1{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+}
+.dark_mask{
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    color:#F6F6F6;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.about_link a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about_link img{
+    margin-right: 10px;
+}
+.about_item{
+    margin-bottom: 4px;
+}
+.about_item_title {
+    font-size: 15px;
+    
+}
+.about_item_txt{
+    font-size: 17px;
+    line-height: 26px;
+}
+.sign_up {
+    background: linear-gradient(0deg, rgba(9, 9, 9, 0.465718), rgba(9, 9, 9, 0.465718)), #1F1F2F;
+}
+.sign_up form{
+    padding: 30px 20px;
+    color: #ffffff;
+}
+.sign_up_title{
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.145714px;
+}
+.input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    margin: 20px 0;
+
+}
+.input_btn{
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #F92251;;
+}
+.input input{
+    width: 95%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    line-height: 26px;
+}
+.input img{
+    padding: 0 10px;
+}
+footer{
+    background-color: #404754;
+    color: #BAC5D3;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 20px;
+}
+.footer_nav{
+    margin-bottom: 18px;
+}
+.footer_nav_link{
+    margin-bottom: 8px;
+    margin-right: 30px;
+}
+.footer_nav_link a{
+    color: #BAC5D3;
+
+}
+.footer_nav_link a:hover {
+    color: white;
+}
+@media (min-width:600px) {
+    .main_content{
+        background-image: url(../img/enduro.png);
+        background-position: left top;
+    }
+    .burger{
+        width: 45px;
+    }
+    .burger span{
+        width: 10px;
+        height: 10px;
+        margin: 2.5px;
+    }
+    .nav{
+        font-size: 18px;
+    }
+    .nav_item.active{
+        margin: 0 40px;
+    }
+    .search_button{
+        margin: 0 12px 0 30px;
+       
+    }
+    .search_button img{
+        width: 20px;
+        height: 20px;
+    }
+    .input[type="search"]{
+        font-size: 14px;
+    }
+    input[type="search"]::placeholder{
+        font-size: 14px;
+    }
+    .dark_mask{
+        box-sizing: border-box;
+        padding-top: 78px;
+        padding-left: 90px;
+        padding-bottom: 60px;
+    }
+    .main_content h1{
+        font-weight: bold;
+        font-size: 90px;
+        line-height: 100px;
+        margin-bottom: 25px;
+    }
+    .about_links{
+        display: flex;
+        margin-bottom: 70px;
+    }
+    .about_link{
+        margin-right: 50px;
+    }
+    .about_link a{
+        font-size: 18px;
+    }
+    .about_link img{
+        height: 50px;
+        width: 50px;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about_item{
+        margin-right: 75px;
+        margin-bottom: 20px;
+    }
+    .about_item_title{
+        font-size: 18px;
+        margin-bottom: 8px;
+    } 
+    .about_item_txt{
+        font-size: 24px;
+    }
+    .about_item_txt img{
+        width: 22px;
+        margin-right: 15px;
+    }
+    .sign_up form {
+        width: 510px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .sign_up_title{
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sign_up_inputs{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .input{
+        flex-basis: 210px;
+        margin-right: 30px;
+        height: 53px;
+        margin-bottom: 50px;
+    }
+    .input:nth-child(2){
+        margin-right: 0;
+    }
+    .input_btn{
+        height: 53px;
+        margin-bottom: 50px;
+    }
+    footer {
+        padding: 30px;
+    }
+    .footer_nav{
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px){
+    .main_content{
+        height: 810px;
+    }
+    .container{
+        max-width: 950px;
+        margin: auto;
+    }
+ 
+    .nav{
+        height: 80px;
+    }
+    .nav_item{
+        display: flex;
+        margin-right: 50px;
+    }
+    .nav_item:hover{
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .burger{
+        position: absolute;
+        left: 20px;
+
+        
+    }
+    .burger img{
+        display: block;
+
+    }
+    .burger span{
+        display: none;
+    }
+    .sign_up form {
+        width: 100%;
+    }
+    .sign_up_title{
+        font-size: 35px;
+        line-height: 53px;
+        width: 788px ;
+        letter-spacing: 0.3px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sign_up_inputs{
+        margin-bottom: 20px;
+    }
+    .input{
+        flex-basis: 30%;
+        margin-right: 0;
+        height: 53px;
+        margin-bottom: 50px;
+    }
+    .input_btn{
+        flex-basis: 30%;
+        height: 53px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    .footer_nav {
+        margin: 0;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1024px;
+    }
+    .burger{
+        position: absolute;
+        left: 40px;   
+    }
+}
+
