@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    text-transform: uppercase;
+    position: relative;
+    height: 80px;
+    letter-spacing: -1px;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.header_container {
+    display: flex;
+    height: 100%;
+    background-color: white;
+    justify-content: space-between;
+    
+}
+.logo {
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+.nav_list ul{
+    display: flex;
+}
+.nav_item {
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: black;
+}
+.nav_item:hover a{
+    color: green;
+    text-decoration: underline;
+}
+.active a{
+    color: green;
+    text-decoration: underline;
+}
+.phone {
+    width: 250px;
+    color: white;
+}
+.phone_number {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    height: 60%;
+    justify-content: center;
+    font-size: 20px;
+}
+.phone_number img{
+    margin-right: 10px;
+}
+.collme {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    height: 40%;
+    justify-content: center;
+}
+.collme img {
+    margin-left: 20px;
+}
+.green {
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 80px;
+    z-index: -1;
+}
+.whyus {
+    background-image: url(../img/why.jpg);
+    background-position: center ;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 50px 0;
+    width: 100%;
+}
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+h1::before {
+    display: block;
+    content: url(../img/line-left.png);
+}
+h1::after {
+    transform: scale(-1, 1);
+    display: block;
+    content: url(../img/line-left.png);
+}
+.whyus_content, .we_content {
+    padding: 30px 0;
+}
+.why_img{
+    margin: auto;  
+    position: relative;
+}
+.why_img img {
+    width: 100%;
+    padding: 30px 0;
+}
+.why_txt{
+    position: absolute;
+}
+.why_txt_left{
+    color: white;
+    left: 20%;
+    bottom: 45%;
+    font-size: 30px;
+}
+.why_txt span{
+    font-size: 60px;
+}
+.why_txt_right {
+    text-transform: uppercase;
+    left: 60%;
+    top: 50%;
+    font-size: 20px;
+    color: green;
+}
+.we {
+    background-image: url(../img/us.jpg);
+    background-position: center ;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 50px 0;
+    width: 100%;
+}
+.we_item{
+    display: flex;
+    margin-bottom: 30px;
+}
+.we_item img{
+    opacity: 0.7;
+    margin-left: 200px;
+}
+.we_item_txt {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.we_item_txt::before {
+    content: "";
+    display: block;
+    height: 80px;
+    width: 1px;
+    background-color: white;
+    margin-right: 50px;
+}
+.types{
+    padding: 50px 0 100px 0;
+}
+.types h1, .types h2{
+    color: green;
+}
+.types_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.types_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 40px 0 ;
+}
+.types_item img {
+    padding-top: 25px;
+}
+.types_item_txt {
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+}
+.types_item_txt::before {
+    position: absolute;
+    top: 20px;
+    left:calc(50% - 15px);
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    
+}
+.types_item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 200px;
+    background-color: rgb(235, 235, 235);
+    z-index: -1;
+}
+.footer {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.copyrite {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+.copyrite a {
+    color: orange;
+}
+.copyrite span {
+color: gray;
+}
+.fresh{
+    display: flex;
+    align-items: center;
+}
+.fresh p{
+    margin: 0 10px 0 0;
+    color: gray;
+}
+.fresh span {
+    color: orange;
+}
