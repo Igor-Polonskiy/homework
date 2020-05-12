@@ -1,0 +1,29 @@
+.container{
+    max-width: 916px;
+    margin: auto;
+    font-family: 'serif';
+    font-weight: 400;
+}
+h1{
+    text-align: center;
+}
+p {
+    font-size: 17px;
+    line-height: 20px;
+}
+.table_row{
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.table_cell {
+    width: 50%;
+}
+img{
+    max-width: 100%;
+}
