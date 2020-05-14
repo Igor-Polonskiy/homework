@@ -6,14 +6,14 @@
     следуя рекомендациям по именованию переменных
 */
 
-let age = 20;
-let text = `Ваш возраст: ${age} лет`;
+const age = 20;
+const text = `Ваш возраст: ${age} лет`;
 alert(text); // Должен вывести: Ваш возраст: 20 лет
 
 
 let hours = 12;
-let minutes = 45;
+const minutes = 45;
 hours = hours + 1;
-let textWithTime = `Текущее время: ${hours}:${minutes}`;
+const textWithTime = `Текущее время: ${hours}:${minutes}`;
 
 alert(textWithTime); // Должен вывести: Текущее время: 13:45
