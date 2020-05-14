@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeInterns</title>
+    <style>
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .styled-input {
+            margin-left: 10px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="GET">
+        <div class="form-row">
+            <label for="numberA">Введите число а: </label>
+            <input class="styled-input" name="numberA" id="numberA" type="number" minlength="1" required>
+        </div>
+        <div class="form-row">
+            <label for="numberB">Введите число b: </label>
+            <input class="styled-input" name="numberB" id="numberB" type="number" minlength="1" required>
+        </div>
+        <button type="submit">Сложить</button>
+    </form>
+
+    <script src="./hw.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
