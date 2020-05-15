@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 50px 0 90px;
+  color: #282828;
+  background-color: #f9f9f9;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: block;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+  border-radius: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+
+.labelForSearch {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.fieldset {
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #193996;
+  border-radius: 15px;
+}
+
+.legend {
+  padding: 5px;
+  background-color: #193996;
+  color: white;
+  border-radius: 10px;
+}
+
+.inputContainer {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: inline-block;
+  width: 140px;
+}
+
+.inputField {
+  width: 170px;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid #787878;
+  background-color: transparent;
+  outline: none;
+  font: 13px/1.4 "Times New Roman", serif;
+}
+
+.textarea {
+  padding: 10px 15px;
+  height: 100px;
+  width: 350px;
+
+  font: 17px/1.4 "Times New Roman", serif;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  background: #fff;
+  outline-color: #193996;
+  resize: none;
+}
+
+.btn {
+  margin-right: 30px;
+  padding: 10px;
+  height: 50px;
+  width: 120px;
+
+  text-align: center;
+  font: 17px/1.4 "Times New Roman", serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 4px;
+  outline: none;
+
+  transition: transform .18s ease-in-out;
+}
+
+.btn:hover {
+  transform: translate(0px, -10px);
+}
+
+.btn.submit {
+  background-color: #4eafc9;
+  border-color: #2a89a2;
+}
+
+.btn.reset {
+  background-color: #dd567e;
+  border-color: #c93964;
+}
+
+.btn.submit:active {
+  background-color: #2a89a2;
+  border-color: #1d6f85;
+}
+
+.btn.reset:active {
+  background-color: #c93964;
+  border-color: #ac254d;
+}
+
+.radioBtn {
+  appearance: none;
+  -webkit-appearance: none;
+
+  position: relative;
+  top: 6px;
+  margin-right: 7px;
+  margin-left: 10px;
+
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #193996;
+
+  outline-style: none;
+}
+
+.radioBtn:checked {
+  border: 4px solid #193996;
+  background-color: #ffeb3b;
+}
+
+.radioBtn:focus {
+  box-shadow: 0 0 0 0.2em rgba(25, 57, 150, .5);
+}
