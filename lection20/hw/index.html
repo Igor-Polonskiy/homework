@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Формы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form action="/posturl/" method="POST" name="form" class="form">
+    <h1 class="heading">Форма</h1>
+    <fieldset class="fieldset">
+        <legend class="legend">Регистрация</legend>
+        <p>Придумайте логин и пароль</p>
+        <section class="inputContainer">
+            <label class="label" for="inputLogin">Логин</label>
+            <input class="inputField" id="inputLogin" type="text" name="login" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="inputPassword">Пароль</label>
+            <input class="inputField" id="inputPassword" type="password" name="password" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="confirmPassword">Повторите пароль</label>
+            <input class="inputField" id="confirmPassword" type="password" name="confirmPassword" />
+        </section>
+    </fieldset>
+
+    <fieldset class="fieldset">
+        <legend class="legend">Личные данные</legend>
+        <section class="inputContainer">
+            <label class="label" for="firstName">Имя</label>
+            <input class="inputField" type="text" id="firstName" name="firstName" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="lastName">Фамилия</label>
+            <input class="inputField" type="text" id="lastName" name="lastName" />
+        </section>
+        <section class="inputContainer">
+            <label class="label" for="secondName">Отчество</label>
+            <input class="inputField" type="text" id="secondName" name="secondName" />
+        </section>
+        <section class="inputContainer">
+            <p>Укажите ваш пол:</p>
+            <label>
+                <input class="radioBtn" type="radio" name="gender" value="male" />
+                Мужской
+            </label>
+            <label>
+                <input class="radioBtn" type="radio" name="gender" value="female" checked />
+                Женский
+            </label>
+        </section>
+    </fieldset>
+
+    <section class="inputContainer">
+        <label>
+            Мною прочитаны условия соглашения:
+            <input type="checkbox" name="license" id="licenseCheckbox" />
+        </label>
+    </section>
+
+    <button class="btn submit" type="submit">
+        Отправить
+    </button>
+
+    <button class="btn reset" type="reset">
+        Сбросить
+    </button>
+</form>
+<script src="validate.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
