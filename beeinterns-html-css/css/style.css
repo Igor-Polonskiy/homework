@@ -6,17 +6,11 @@ body {
 }
 
 header {
-    max-width: 1440px;
     margin: auto;
     height: 89px;
     padding: 0 50px;
     background-color: #FFFFFF;
     box-sizing: border-box;
-}
-
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .grey_bg {
@@ -118,6 +112,7 @@ header {
 .article {
     max-width: 380px;
     color: #1C1E20;
+    margin:0 10px;
 }
 
 .article_img {
