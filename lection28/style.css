@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+}
+ main{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .red{
+     color: red;
+ }
+ .green{
+     color: green;
+ }
+button{
+    background-color: #fbca6c;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #fad485;
+}
