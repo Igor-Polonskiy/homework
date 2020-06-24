@@ -4,7 +4,7 @@
  push.addEventListener('click', (e) => {
      const req = window.frames[0].document.querySelector('.request')
      let number = prompt("Введите число", );
-     if (number == '') {
+     if (!number) {
          alert('введите любое число');
      } else if (number.match(/\D/)) {
          alert(' введите ЧИСЛО! ЦИФРАМИ!!');
