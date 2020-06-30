@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private":true,
+  "private": true,
   "scripts": {
     "start": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "date-fns": "^1.30.1",
-    "nodemon": "git+https://github.com/remy/nodemon.git",
     "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "git+https://github.com/remy/nodemon.git"
   }
 }
